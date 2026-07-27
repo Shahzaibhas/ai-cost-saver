@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+httpx
+google-generativeai
+openai
+anthropic
+scikit-learn
+pytest
+pytest-asyncio
