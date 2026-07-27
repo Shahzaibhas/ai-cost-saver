@@ -174,6 +174,12 @@ logger = setup_logging()
 # 2. Async SQLite Database with Migrations
 # ---------------------------------------------------------------------------
 
+
+# ─── CUSTOMER KEY MANAGEMENT ────────────────────────────────────────
+# Add trial/paid customer keys here. Format: "key_string": {"email": "...", "plan": "trial/paid", "active": True}
+CUSTOMER_KEYS = {
+    # Example: "trial_mike_abc123": {"email": "mike@example.com", "plan": "trial", "active": True},
+}
 class AsyncRequestLogger:
     def __init__(self, db_path: str = "ai_calls.db"):
         self.db_path = db_path
